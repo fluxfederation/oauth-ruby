@@ -35,7 +35,7 @@ module OAuth::RequestProxy
         params << header_params.to_query
         params << request.query_string unless query_string_blank?
 
-        if request.post? && request.content_type == Mime::Type.lookup("application/x-www-form-urlencoded")
+        if (request.post? || request.put?) && request.content_type == Mime::Type.lookup("application/x-www-form-urlencoded")
           params << request.raw_post
         end
       end
