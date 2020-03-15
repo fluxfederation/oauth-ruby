@@ -108,7 +108,6 @@ Gem::Specification.new do |s|
     "test/test_typhoeus_request_proxy.rb"
   ]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{oauth}
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{OAuth Core Ruby implementation}
 
